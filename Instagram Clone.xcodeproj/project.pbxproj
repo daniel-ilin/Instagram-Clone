@@ -56,6 +56,9 @@
 		65B190ED275BD36F00768F97 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 65B190EC275BD36F00768F97 /* FirebaseStorage */; };
 		65B190EF275BD36F00768F97 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 65B190EE275BD36F00768F97 /* FirebaseStorageCombine-Community */; };
 		65B190F1275BD36F00768F97 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 65B190F0275BD36F00768F97 /* FirebaseStorageSwift-Beta */; };
+		65BBC3112764629A00833486 /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BBC3102764629A00833486 /* AuthenticationDelegate.swift */; };
+		65BBC313276465CF00833486 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BBC312276465CF00833486 /* UserCell.swift */; };
+		65BBC3152764734B00833486 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BBC3142764734B00833486 /* UserCellViewModel.swift */; };
 		65D4CA1C275C50AF009A855A /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D4CA1B275C50AF009A855A /* ImageUploader.swift */; };
 		65D4CA1E275C50B6009A855A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D4CA1D275C50B6009A855A /* AuthService.swift */; };
 		65D4CA20275D019A009A855A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D4CA1F275D019A009A855A /* ProfileCell.swift */; };
@@ -87,6 +90,9 @@
 		6595F829276289B300791780 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6595F82D27629C9700791780 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		65B190BB275BD12F00768F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65BBC3102764629A00833486 /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDelegate.swift; sourceTree = "<group>"; };
+		65BBC312276465CF00833486 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		65BBC3142764734B00833486 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		65D4CA1B275C50AF009A855A /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		65D4CA1D275C50B6009A855A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		65D4CA1F275D019A009A855A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				651DEF4F2759197200260037 /* CustomTextField.swift */,
 				6558AE0B27598689007E1F6E /* AuthButton.swift */,
 				65D4CA23275D01A9009A855A /* ProfileViews */,
+				65BBC312276465CF00833486 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,6 +231,7 @@
 			children = (
 				651DEF4B2759074A00260037 /* LoginController.swift */,
 				651DEF4D2759075300260037 /* RegistrationController.swift */,
+				65BBC3102764629A00833486 /* AuthenticationDelegate.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -233,6 +241,7 @@
 			children = (
 				6558AE0D27598C29007E1F6E /* AuthenticationViewModel.swift */,
 				6595F82D27629C9700791780 /* ProfileHeaderViewModel.swift */,
+				65BBC3142764734B00833486 /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -352,6 +361,7 @@
 			files = (
 				65D4CA1C275C50AF009A855A /* ImageUploader.swift in Sources */,
 				65D4CA22275D01A3009A855A /* ProfileHeader.swift in Sources */,
+				65BBC3112764629A00833486 /* AuthenticationDelegate.swift in Sources */,
 				651DEF502759197200260037 /* CustomTextField.swift in Sources */,
 				6558AE0C27598689007E1F6E /* AuthButton.swift in Sources */,
 				651DEF4C2759074A00260037 /* LoginController.swift in Sources */,
@@ -362,7 +372,9 @@
 				6510A2FA27586D6100B13C8B /* SearchController.swift in Sources */,
 				6595F82A276289B300791780 /* User.swift in Sources */,
 				6510A2DB27586B8200B13C8B /* AppDelegate.swift in Sources */,
+				65BBC313276465CF00833486 /* UserCell.swift in Sources */,
 				6595F82E27629C9700791780 /* ProfileHeaderViewModel.swift in Sources */,
+				65BBC3152764734B00833486 /* UserCellViewModel.swift in Sources */,
 				6595F8282762855600791780 /* Constants.swift in Sources */,
 				651DEF48275881F600260037 /* Extensions.swift in Sources */,
 				6510A30027586D7D00B13C8B /* ProfileController.swift in Sources */,

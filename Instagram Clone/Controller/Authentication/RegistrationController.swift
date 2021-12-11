@@ -18,12 +18,15 @@ class RegistrationController: UIViewController {
     
     // MARK: - Properties
     
+    weak var delegate: AuthenticationDelegate?
+    
     private var viewModel = RegistrationViewModel()
     private var profileImage: UIImage?
     
     private let plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "plus_photo"), for: .normal)
+        button.contentMode = .scaleAspectFill
         button.tintColor = .white
         button.addTarget(self, action: #selector(handleProfilePhotoSelect), for: .touchUpInside)
         return button
@@ -94,7 +97,7 @@ class RegistrationController: UIViewController {
                 return
             }
             
-            self.dismiss(animated: true, completion: nil)
+            self.delegate?.authenticationDidComplete()            
         }
     }
     

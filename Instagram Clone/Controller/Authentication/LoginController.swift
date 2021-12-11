@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-protocol AuthenticationDelegate: AnyObject {
-    func authenticationDidComplete()
-}
-
 class LoginController: UIViewController {
         
     
@@ -73,6 +69,7 @@ class LoginController: UIViewController {
     
     @objc func handleShowSignUp() {
         let controller = RegistrationController()
+        controller.delegate = delegate
         navigationController?.pushViewController(controller, animated: true)
     }
     
