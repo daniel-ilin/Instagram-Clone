@@ -33,7 +33,6 @@ struct LoginViewModel: AuthenticationViewModel {
     var buttonTitleColor: UIColor {
         return formIsValid ? .white : .white.withAlphaComponent(0.67)
     }
-    
 }
 
 
