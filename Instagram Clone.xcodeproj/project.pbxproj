@@ -22,8 +22,15 @@
 		651DEF4C2759074A00260037 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651DEF4B2759074A00260037 /* LoginController.swift */; };
 		651DEF4E2759075300260037 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651DEF4D2759075300260037 /* RegistrationController.swift */; };
 		651DEF502759197200260037 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651DEF4F2759197200260037 /* CustomTextField.swift */; };
+		6529256F276BBA15009FD124 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6529256E276BBA15009FD124 /* JGProgressHUD */; };
+		65292571276BBF1E009FD124 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65292570276BBF1E009FD124 /* Posts.swift */; };
+		65292573276BE543009FD124 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65292572276BE542009FD124 /* PostViewModel.swift */; };
 		6558AE0C27598689007E1F6E /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558AE0B27598689007E1F6E /* AuthButton.swift */; };
 		6558AE0E27598C29007E1F6E /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558AE0D27598C29007E1F6E /* AuthenticationViewModel.swift */; };
+		6572E8BD2768456A003FCB40 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 6572E8BC2768456A003FCB40 /* YPImagePicker */; };
+		6572E8BF27684EDB003FCB40 /* UploadPostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572E8BE27684EDB003FCB40 /* UploadPostsController.swift */; };
+		6572E8C127685238003FCB40 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572E8C027685238003FCB40 /* InputTextView.swift */; };
+		6572E8C327685C9F003FCB40 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572E8C227685C9F003FCB40 /* PostService.swift */; };
 		6595F8262762852100791780 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595F8252762852100791780 /* UserService.swift */; };
 		6595F8282762855600791780 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595F8272762855600791780 /* Constants.swift */; };
 		6595F82A276289B300791780 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595F829276289B300791780 /* User.swift */; };
@@ -83,8 +90,13 @@
 		651DEF4B2759074A00260037 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		651DEF4D2759075300260037 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		651DEF4F2759197200260037 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		65292570276BBF1E009FD124 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		65292572276BE542009FD124 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		6558AE0B27598689007E1F6E /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		6558AE0D27598C29007E1F6E /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewModel.swift; path = "Instagram Clone/ViewModel/AuthenticationViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		6572E8BE27684EDB003FCB40 /* UploadPostsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostsController.swift; sourceTree = "<group>"; };
+		6572E8C027685238003FCB40 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		6572E8C227685C9F003FCB40 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		6595F8252762852100791780 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		6595F8272762855600791780 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6595F829276289B300791780 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -115,6 +127,7 @@
 				65B190DF275BD36E00768F97 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				65B190C1275BD36E00768F97 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				65B190E5275BD36E00768F97 /* FirebaseMLModelDownloader in Frameworks */,
+				6572E8BD2768456A003FCB40 /* YPImagePicker in Frameworks */,
 				65B190D5275BD36E00768F97 /* FirebaseFirestore in Frameworks */,
 				65B190E7275BD36E00768F97 /* FirebaseMessaging in Frameworks */,
 				65B190E3275BD36E00768F97 /* FirebaseInstallations in Frameworks */,
@@ -125,6 +138,7 @@
 				65B190D9275BD36E00768F97 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				65B190CD275BD36E00768F97 /* FirebaseCrashlytics in Frameworks */,
 				65B190CF275BD36E00768F97 /* FirebaseDatabase in Frameworks */,
+				6529256F276BBA15009FD124 /* JGProgressHUD in Frameworks */,
 				65B190EB275BD36F00768F97 /* FirebaseRemoteConfig in Frameworks */,
 				65B190DB275BD36E00768F97 /* FirebaseFunctions in Frameworks */,
 				65B190CB275BD36E00768F97 /* FirebaseAuthCombine-Community in Frameworks */,
@@ -173,8 +187,9 @@
 		6510A2EE27586BBD00B13C8B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				651DEF452758812500260037 /* FeedCell.swift */,
+				6572E8C027685238003FCB40 /* InputTextView.swift */,
 				651DEF4F2759197200260037 /* CustomTextField.swift */,
+				651DEF452758812500260037 /* FeedCell.swift */,
 				6558AE0B27598689007E1F6E /* AuthButton.swift */,
 				65D4CA23275D01A9009A855A /* ProfileViews */,
 				65BBC312276465CF00833486 /* UserCell.swift */,
@@ -191,6 +206,7 @@
 				6510A2FD27586D7400B13C8B /* NotificationController.swift */,
 				6510A2FB27586D6900B13C8B /* ImageSelectroController.swift */,
 				6510A2F927586D6100B13C8B /* SearchController.swift */,
+				6572E8BE27684EDB003FCB40 /* UploadPostsController.swift */,
 				651DEF492759073500260037 /* Authentication */,
 			);
 			path = Controller;
@@ -202,6 +218,7 @@
 				65D4CA1B275C50AF009A855A /* ImageUploader.swift */,
 				65D4CA1D275C50B6009A855A /* AuthService.swift */,
 				6595F8252762852100791780 /* UserService.swift */,
+				6572E8C227685C9F003FCB40 /* PostService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -210,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				6595F829276289B300791780 /* User.swift */,
+				65292570276BBF1E009FD124 /* Posts.swift */,
 			);
 			name = Model;
 			path = "New Group1/Model";
@@ -242,6 +260,7 @@
 				6558AE0D27598C29007E1F6E /* AuthenticationViewModel.swift */,
 				6595F82D27629C9700791780 /* ProfileHeaderViewModel.swift */,
 				65BBC3142764734B00833486 /* UserCellViewModel.swift */,
+				65292572276BE542009FD124 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -299,6 +318,8 @@
 				65B190EE275BD36F00768F97 /* FirebaseStorageCombine-Community */,
 				65B190F0275BD36F00768F97 /* FirebaseStorageSwift-Beta */,
 				6595F8302762A26900791780 /* SDWebImage */,
+				6572E8BC2768456A003FCB40 /* YPImagePicker */,
+				6529256E276BBA15009FD124 /* JGProgressHUD */,
 			);
 			productName = "Insagram Clone";
 			productReference = 6510A2D727586B8200B13C8B /* Instagram Clone.app */;
@@ -331,6 +352,8 @@
 			packageReferences = (
 				65B190BD275BD36E00768F97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				6595F82F2762A26900791780 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				6572E8BB2768456A003FCB40 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+				6529256D276BBA15009FD124 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 6510A2D827586B8200B13C8B /* Products */;
 			projectDirPath = "";
@@ -359,12 +382,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65292573276BE543009FD124 /* PostViewModel.swift in Sources */,
 				65D4CA1C275C50AF009A855A /* ImageUploader.swift in Sources */,
 				65D4CA22275D01A3009A855A /* ProfileHeader.swift in Sources */,
+				6572E8BF27684EDB003FCB40 /* UploadPostsController.swift in Sources */,
 				65BBC3112764629A00833486 /* AuthenticationDelegate.swift in Sources */,
 				651DEF502759197200260037 /* CustomTextField.swift in Sources */,
 				6558AE0C27598689007E1F6E /* AuthButton.swift in Sources */,
 				651DEF4C2759074A00260037 /* LoginController.swift in Sources */,
+				65292571276BBF1E009FD124 /* Posts.swift in Sources */,
 				6510A2DF27586B8200B13C8B /* ViewController.swift in Sources */,
 				6510A2FC27586D6900B13C8B /* ImageSelectroController.swift in Sources */,
 				6510A2FE27586D7400B13C8B /* NotificationController.swift in Sources */,
@@ -372,11 +398,13 @@
 				6510A2FA27586D6100B13C8B /* SearchController.swift in Sources */,
 				6595F82A276289B300791780 /* User.swift in Sources */,
 				6510A2DB27586B8200B13C8B /* AppDelegate.swift in Sources */,
+				6572E8C127685238003FCB40 /* InputTextView.swift in Sources */,
 				65BBC313276465CF00833486 /* UserCell.swift in Sources */,
 				6595F82E27629C9700791780 /* ProfileHeaderViewModel.swift in Sources */,
 				65BBC3152764734B00833486 /* UserCellViewModel.swift in Sources */,
 				6595F8282762855600791780 /* Constants.swift in Sources */,
 				651DEF48275881F600260037 /* Extensions.swift in Sources */,
+				6572E8C327685C9F003FCB40 /* PostService.swift in Sources */,
 				6510A30027586D7D00B13C8B /* ProfileController.swift in Sources */,
 				6510A2F827586D5800B13C8B /* FeedController.swift in Sources */,
 				6510A2F627586C8B00B13C8B /* MainTabController.swift in Sources */,
@@ -596,6 +624,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6529256D276BBA15009FD124 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		6572E8BB2768456A003FCB40 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		6595F82F2762A26900791780 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -615,6 +659,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6529256E276BBA15009FD124 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6529256D276BBA15009FD124 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		6572E8BC2768456A003FCB40 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6572E8BB2768456A003FCB40 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
 		6595F8302762A26900791780 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6595F82F2762A26900791780 /* XCRemoteSwiftPackageReference "SDWebImage" */;
